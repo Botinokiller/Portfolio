@@ -29,7 +29,7 @@ import { useTranslation } from "react-i18next";
 // import Projects from "./pages/Projects.jsx";
 // import Skills from "./pages/Skills";
 // import Contact from "./pages/Contact";
-import Hans from "./components/"
+import Hans from "./components/Hans";
 export default function App() {
 
     const { t } = useTranslation();
@@ -136,6 +136,7 @@ export default function App() {
       <Skills1 img1={img1} img2={img2}  img3={img3} img4={img4} skills={skills} />
       <Projects1 projects={projects} sec={sec} clock={clock} paint={paint} node={node} equipment={equipment} todolist={todolist} mountain={mountain} property={property} webdesign={webdesign} pot={pot}/>
       <Footer envelope={envelope} linkedin={linkedin}/>
+      <Hans/>
     </>
   )
 }
