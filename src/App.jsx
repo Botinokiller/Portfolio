@@ -29,7 +29,7 @@ import { useTranslation } from "react-i18next";
 // import Projects from "./pages/Projects.jsx";
 // import Skills from "./pages/Skills";
 // import Contact from "./pages/Contact";
-
+import Hans from "./components/"
 export default function App() {
 
     const { t } = useTranslation();
