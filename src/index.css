@@ -1,0 +1,585 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+   
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(36, 52, 120, 0.45) 0%,
+      rgba(12, 22, 60, 0.2) 35%,
+      rgba(3, 10, 30, 0.95) 75%
+    ),
+    linear-gradient(
+      90deg,
+      #04112f 0%,
+      #07173d 50%,
+      #04112f 100%
+    );
+  background-color: #020b1f;
+
+
+
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --accent: #3b82f6;
+  --muted: #64748b;
+  --border: #e2e8f0;
+}
+
+.nav__list{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;           
+  font-size: 15px;
+  letter-spacing: -0.01em;    
+  color: #ffffff;
+  
+}
+
+.nav__link a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+
+}
+.nav__link a:hover {
+  color: #4a90d9;
+
+  text-shadow:
+    0 0 5px #4a90d9,
+    0 0 10px #4a90d9,
+    0 0 20px #4a90d9;
+}
+
+
+.nav__logo{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+
+    background: rgba(10, 15, 35, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0;
+    padding: 0;
+}
+
+
+.inner_1{
+    max-width: 1200px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.Header_intro{
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;           
+  font-size: 18px;
+  letter-spacing: -0.02em;   
+  color: #4a9eff;     
+  text-align: center;
+  margin: 10px 0px;
+}      
+
+
+
+.inner_2{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;     
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+
+.Header_name{
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700; 
+  font-size: 80px;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: white;
+  text-align: center;
+  margin: 30px 10px;
+  margin-bottom: 30px;
+}
+
+.Header_script{
+  font-family: 'Inter', system-ui, sans-serif; 
+  font-weight: 500;                    
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #94a3b4;                      
+  max-width:800px;
+  opacity: 0.95;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+
+
+
+.chevron {
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  animation: bouncex 3.1s ease-in-out infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes bouncex {
+  0%, 100% {
+    transform: translateY(0px) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(15px) rotate(45deg);
+    opacity: 0.5;
+  }
+}
+
+
+.Header_btns{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.Header_btn:nth-of-type(1){
+  background: #f0f0f5;
+  color: #0e1a2b;
+  border: none;
+  border-radius: 999px;
+  padding: 20px 38px;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 15px;
+  cursor: pointer;
+}
+.Header_btn:nth-of-type(1):hover{
+  transform: scale(1.1);
+  font-weight: 700;
+
+}
+
+.Header_btn:nth-of-type(2){
+  background: transparent;
+  color: #ffffff ;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  padding: 20px 38px;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Header_btn:nth-of-type(2):hover{
+  transform: scale(1.1);
+  background: #1E293B;
+  font-weight: 700;
+}
+
+
+.main{
+  background-color: #0a163233;
+  min-height: 600px;
+  margin-bottom: 150px;
+}
+
+.inner__3{
+  min-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.image_wrapper{
+  margin-top: 150px;
+  width: 450px;
+  height: 500px;
+  border-radius: 30px;
+  position: relative;
+  background: linear-gradient(
+    #807EFB,
+    #9345FB
+  );
+}
+
+.badge{
+  position: absolute;
+  background: #051840;
+  border: 1px solid black;
+  width: 120px;
+  height: 100px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 420px;
+  left: 360px;
+  z-index: 10;
+}
+
+.badge-number{
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;                    
+  font-size: 30px;  
+  line-height: 1;
+  letter-spacing: -0.04em;             
+  color: #4a9eff;
+
+}
+
+.text-content{
+  margin-bottom: 50px;
+}
+
+.badge-label{
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;                   
+  font-size: 10px;
+  letter-spacing: 0.08em;             
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.about-title{
+  font-family: 'Inter', system-ui, sans-serif; 
+  font-weight: 700;                    
+  font-size: 35px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: white;
+}
+
+.about-text{
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;                   
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  line-height: 1.65;
+  letter-spacing: -0.005em;
+  color: #b9cde6;
+  max-width: 65ch;
+
+}
+
+.inner__4{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.skill__title{
+  font-family: 'Inter', system-ui, sans-serif; 
+  font-weight: 700;                    
+  font-size: 35px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: white;
+}
+
+.skill__list{
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.skill_text{
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;           
+  font-size: 1rem;         
+  letter-spacing: -0.015em;
+  color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill_text:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.skill_text img {
+  width: 100px;
+  height: 100px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+.projects-title{
+  font-family: "Inter", "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 40px; 
+  font-weight: 700;                   
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.projects-subtitle{
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.125rem;                  
+  font-weight: 400;                      
+  line-height: 1.5;
+  color: rgba(161, 221, 249, 0.621);   
+  max-width: 65ch;
+  margin-bottom: 100px
+}
+
+.project-section{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    transform: translateY(-10px);
+
+}
+
+.project-image{
+  width: 100%;
+  height: 380px;       
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.project-name{
+  font-family: "Inter", "Satoshi", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 600;           
+  line-height: 1.05;
+  letter-spacing: -0.025em;  
+  color: #ffffff;
+}
+
+.project-desc{
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.125rem;       
+  font-weight: 400;           
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 60ch;
+}
+
+.project-card{
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+
+}
+
+.project-image {
+  position: relative;  
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;                             
+  background: rgba(0, 0, 0, 0.55);      
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;                           
+  transition: opacity 0.3s ease;
+}
+
+.project-image:hover .project-overlay {
+  opacity: 1;                           
+}
+
+.view-btn {
+  background: #fff;
+  color: #0d1117;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.contact-title{
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;           
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #d9e1f2;   
+  text-align: center;
+}
+
+.social-btn svg{
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+  color: black;
+
+}
+.social-btn svg:hover{
+  transform: translateY(-10px);
+  color: white;
+}
+
+.social-btn img{
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.social-btn img:hover{
+  transform: translateY(-10px);
+
+}
+
+
+.contact-copy{
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;           
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.6);   
+  text-align: center;
+}
+
+.contact-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 17px;           
+  letter-spacing: -0.02em;
+  color: #94a3b8;            
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.contact-email:hover{
+  transform: translateY(-10px);
+  color: white;
+}
+
+
+.contact-email img{
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.contact-email img:hover{
+  background: white;
+}
+
+
+.lang_btn{
+  background: rgba(255, 255, 255, 0.06);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    padding: 11px 20px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14.5px;
+    letter-spacing: -0.015em;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-btn:hover {
+    background: rgba(74, 158, 255, 0.12);
+    border-color: #4a9eff;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(74, 158, 255, 0.15);
+}

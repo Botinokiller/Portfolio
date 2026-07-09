@@ -1,0 +1,84 @@
+
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "greeting": "HI, I'M",
+    "title": "Mukhammaddust Javlon",
+    "description": "Frontend Developer & UI Designer. I build beautiful and functional digital experience",
+    "projectsBtn": "Projects",
+    "contactBtn": "Contact"
+  },
+    "about": {
+    "title": "About Me",
+    "description1": "I am a passionate frontend developer with 5 years of experience in creating modern web applications. I love turning complex problems into simple, beautiful and intuitive designs.",
+    "description2": "When I am not coding, you can find me exploring new technologies, reading about design trends, or enjoying a good cup of coffee.",
+    "experience": "5+",
+    "experienceText": "YEARS EXP."
+  },
+    "skills": {
+    "title": "My Skills",
+    "html": "HTML",
+    "javascript": "JS",
+    "react": "React",
+    "node": "Node JS"
+  },
+
+    "projects": {
+        "title": "Selected Projects",
+        "description": "Frontend Developer & UI Designer. I build beautiful and functional digital experiences.",
+
+    "clock": {
+        "title": "Clock",
+        "description": "Beginner friendly project 'clock'"
+    },
+
+    "ecoPaint": {
+        "title": "Eco-Friendly Paints",
+        "description": "Eco-Friendly Paints For A Healthy Home."
+    },
+
+    "fengShui": {
+        "title": "FengShui",
+      " description": "Website on clay pot inspired by Feng Shui"
+    },
+     "uiuxer": {
+      "title": "UIUXer",
+      "description": "UIUXer is a creative, minimal, and cleanly designed personal and portfolio Webflow template."
+    },
+
+    "property": {
+      "title": "Property Website",
+      "description": "Guarantee your home closes with cash-backed, contingency-free offers for buyers, sellers, their agents, and loan officers."
+    },
+
+    "security": {
+      "title": "Web Security",
+      "description": "Using AI and a team of experts, HyperComply automates security reviews and accelerates due diligence."
+    },
+
+    "saintPetersburg": {
+      "title": "Saint Petersburg",
+      "description": "Sale and rental of lighting equipment. Full turnkey setup for official events."
+    },
+
+    "todo": {
+      "title": "To Do List",
+      "description": "To-do list application for managing daily tasks."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "email": "javlonmdj69@gmail.com",
+    "copyright": "© 2026 Javlon Mukhammaddust. All rights reserved."
+  }
+
+
+}
+
+
